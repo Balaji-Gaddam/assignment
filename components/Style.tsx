@@ -100,11 +100,15 @@ export default function CuratedCollections() {
               className={`absolute inset-0   flex items-center justify-center px-20 py-10`}
             >
               <div
-                className={`text-center bg-${
-                  post.color == "white" ? "black" : "white"
+                className={`text-center ${
+                  post.color == "white" ? "bg-black" : "bg-white"
                 } bg-opacity-40 py-2 px-9`}
               >
-                <p className={`text-3xl mb-2 font-bold text-${post.color}`}>
+                <p
+                  className={`text-3xl mb-2 font-bold ${
+                    post.color == "white" ? "text-white" : "text-black"
+                  }`}
+                >
                   {post.title}
                 </p>
                 <p className={`underline text-${post.color} font-bold`}>
