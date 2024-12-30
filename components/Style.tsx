@@ -74,7 +74,7 @@ export default function CuratedCollections() {
               <Image
                 src={collection.image}
                 alt={collection.title}
-                width={300}
+                width={500}
                 height={300}
                 className="hover:scale-110 transition-transform duration-300"
               />
